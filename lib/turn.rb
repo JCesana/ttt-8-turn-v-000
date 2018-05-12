@@ -37,7 +37,10 @@ def turn(board)
   puts "Please enter 1-9:"
   gets.index
   
-  if valide_move?
-    move(board, )
+  if valide_move?(board, index)
+    move(board, index)
+  else
+    turn(board)
+  end
   
 end
